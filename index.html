@@ -6,115 +6,152 @@
 <title>样本回寄</title>
 
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
 
-    body{
-        font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
-        background:#f4f7f5;
-        color:#333;
-        padding:20px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .container{
-        max-width:500px;
-        margin:0 auto;
-        background:#fff;
-        border-radius:20px;
-        padding:30px 24px;
-        box-shadow:0 4px 20px rgba(0,0,0,0.08);
-    }
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+    background:#f4f7f5;
+    color:#333;
+    padding:20px;
+}
 
-    .logo{
-        text-align:center;
-        margin-bottom:24px;
-    }
+.container{
+    max-width:520px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:24px;
+    padding:32px 24px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
 
-    .logo img{
-        width:90px;
-        height:90px;
-        object-fit:contain;
-    }
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
 
-    .title{
-        text-align:center;
-        font-size:26px;
-        font-weight:700;
-        color:#1E8E5A;
-        margin-bottom:12px;
-    }
+.logo img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
 
-    .copy-tip{
-        text-align:center;
-        background:#E8F7EE;
-        color:#1E8E5A;
-        padding:12px;
-        border-radius:12px;
-        font-size:15px;
-        margin-bottom:24px;
-    }
+.title{
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    color:#1E8E5A;
+    margin-bottom:12px;
+}
 
-    .address-box{
-        background:#f8f8f8;
-        border-radius:16px;
-        padding:20px;
-        line-height:1.8;
-        margin-bottom:24px;
-    }
+.sub-title{
+    text-align:center;
+    font-size:15px;
+    color:#666;
+    margin-bottom:24px;
+}
 
-    .label{
-        font-size:14px;
-        color:#888;
-        margin-bottom:8px;
-    }
+.copy-tip{
+    background:#E8F7EE;
+    color:#1E8E5A;
+    padding:14px;
+    border-radius:14px;
+    text-align:center;
+    font-size:15px;
+    margin-bottom:24px;
+    line-height:1.6;
+}
 
-    .name{
-        font-size:18px;
-        font-weight:600;
-    }
+.address-box{
+    background:#f8f8f8;
+    border-radius:18px;
+    padding:22px;
+    margin-bottom:24px;
+}
 
-    .phone{
-        font-size:18px;
-        font-weight:600;
-        margin-bottom:10px;
-    }
+.label{
+    color:#999;
+    font-size:14px;
+    margin-bottom:8px;
+}
 
-    .address{
-        font-size:16px;
-        line-height:1.7;
-    }
+.name{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:6px;
+}
 
-    .btn{
-        display:block;
-        width:100%;
-        text-align:center;
-        background:#1E8E5A;
-        color:#fff;
-        text-decoration:none;
-        padding:16px;
-        border-radius:14px;
-        font-size:18px;
-        font-weight:600;
-        margin-bottom:18px;
-    }
+.phone{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:14px;
+}
 
-    .tips{
-        background:#FFF8E8;
-        border-radius:14px;
-        padding:16px;
-        font-size:14px;
-        line-height:1.8;
-        color:#8A6D3B;
-    }
+.address{
+    line-height:1.8;
+    font-size:16px;
+}
 
-    .tips-title{
-        font-weight:700;
-        margin-bottom:8px;
-    }
+.btn{
+    width:100%;
+    border:none;
+    background:#1E8E5A;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    padding:18px;
+    border-radius:16px;
+    cursor:pointer;
+    margin-bottom:18px;
+}
+
+.btn:active{
+    opacity:0.9;
+}
+
+.copy-btn{
+    width:100%;
+    border:none;
+    background:#ffffff;
+    color:#1E8E5A;
+    font-size:17px;
+    font-weight:600;
+    padding:16px;
+    border-radius:16px;
+    cursor:pointer;
+    margin-bottom:22px;
+    border:2px solid #1E8E5A;
+}
+
+.tips{
+    background:#FFF8E8;
+    border-radius:16px;
+    padding:18px;
+    line-height:1.9;
+    color:#8A6D3B;
+    font-size:14px;
+}
+
+.tips-title{
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:24px;
+    font-size:13px;
+    color:#999;
+    line-height:1.8;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -123,8 +160,11 @@
 
     <!-- LOGO -->
     <div class="logo">
-        <!-- 替换成你的LOGO -->
+
+        <!-- 替换成你的logo -->
+        <!-- 没有logo可删除整行 -->
         <img src="logo.png" alt="LOGO">
+
     </div>
 
     <!-- 标题 -->
@@ -132,32 +172,50 @@
         样本回寄
     </div>
 
+    <div class="sub-title">
+        肠道菌群检测样本回寄
+    </div>
+
     <!-- 自动复制提示 -->
     <div class="copy-tip" id="copyTip">
-        回寄地址已自动复制
+        回寄地址已自动复制<br>
+        可直接粘贴到顺丰寄件
     </div>
 
     <!-- 地址 -->
     <div class="address-box">
 
-        <div class="label">收件人</div>
-        <div class="name">胡老师</div>
+        <div class="label">
+            收件人
+        </div>
 
-        <div class="phone">15201182406</div>
+        <div class="name">
+            胡老师
+        </div>
 
-        <div class="label">回寄地址</div>
+        <div class="phone">
+            15201182406
+        </div>
+
+        <div class="label">
+            回寄地址
+        </div>
+
         <div class="address">
             北京市昌平区南邵镇双营西路79号院5号楼5层
         </div>
 
     </div>
 
-    <!-- 顺丰按钮 -->
-    <a class="btn"
-       href="https://m.sf-express.com"
-       target="_blank">
-       打开顺丰寄件
-    </a>
+    <!-- 打开顺丰 -->
+    <button class="btn" onclick="openSF()">
+        打开顺丰寄件
+    </button>
+
+    <!-- 手动复制 -->
+    <button class="copy-btn" onclick="copyAddress()">
+        点击复制回寄地址
+    </button>
 
     <!-- 注意事项 -->
     <div class="tips">
@@ -169,35 +227,92 @@
         1、建议采样后当天寄出<br>
         2、推荐使用顺丰快递<br>
         3、请确保样本密封完整<br>
-        4、寄件时请填写准确联系电话
+        4、请填写准确联系电话<br>
+        5、建议选择上门取件
 
+    </div>
+
+    <div class="footer">
+        感谢您的配合<br>
+        祝您身体健康
     </div>
 
 </div>
 
 <script>
 
-const text = `
+// 回寄地址
+const addressText = `
 胡老师
 15201182406
 北京市昌平区南邵镇双营西路79号院5号楼5层
 `;
 
-function copyAddress(){
 
-    navigator.clipboard.writeText(text)
+// 页面打开自动复制地址
+window.onload = function(){
+
+    navigator.clipboard.writeText(addressText)
     .then(() => {
-        document.getElementById('copyTip').innerText =
-            '回寄地址已自动复制，可直接粘贴';
+
+        document.getElementById("copyTip").innerHTML =
+        "回寄地址已自动复制<br>可直接粘贴到顺丰寄件";
+
     })
     .catch(() => {
-        document.getElementById('copyTip').innerText =
-            '请长按复制地址';
+
+        document.getElementById("copyTip").innerHTML =
+        "请点击下方按钮复制回寄地址";
+
+    });
+
+};
+
+
+// 手动复制地址
+function copyAddress(){
+
+    navigator.clipboard.writeText(addressText)
+    .then(() => {
+
+        alert("回寄地址已复制");
+
+    })
+    .catch(() => {
+
+        prompt("请手动复制以下地址：", addressText);
+
     });
 
 }
 
-copyAddress();
+
+// 打开顺丰
+function openSF(){
+
+    const sfCode = '#小程序://顺丰速运+/Pr5Tq49JcD8USqF';
+
+    navigator.clipboard.writeText(sfCode)
+    .then(() => {
+
+        alert(
+`顺丰寄件入口已复制
+
+请返回微信聊天界面
+微信会自动识别并弹出顺丰小程序`
+        );
+
+    })
+    .catch(() => {
+
+        prompt(
+'请手动复制以下内容到微信打开：',
+sfCode
+        );
+
+    });
+
+}
 
 </script>
 
